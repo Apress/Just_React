@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> My first html page </title>
+</head>
+
+<body>
+  <div id="app">
+    <p id="p1" style="color:red">Just React</p>
+    <p id="p2" style="color:green">2022</p>
+    <button onClick="changeContent()">Change Content</button>
+  </div>
+  <script>
+    function changeContent() {
+      const p1 = document.getElementById('p1');
+      p1.textContent = 'Welcome to Web';
+      const p2 = document.getElementById('p2');
+      p2.textContent = '1991';
+    }
+  </script>
+</body>
+
+</html>
