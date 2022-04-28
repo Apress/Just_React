@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" id="inputName" />
+    <button onclick="swapCase()">Swap Case</button>
+    <span id="outputName"></span>
+    <script>
+        function swapCase() {
+            const name = document.getElementById("inputName").value;
+            const characters = name.split("");
+            
+            const changedCharacters = characters.map(
+                function (c) {
+                    if (c == c.toLowerCase()) {
+                        return c.toUpperCase();
+                    }
+                    else {
+                        return c.toLowerCase();
+                    }
+                });
+            const changedName = changedCharacters.join("");
+
+            document.getElementById("outputName").textContent = changedName;
+        }
+    </script>
+</body>
+
+</html>

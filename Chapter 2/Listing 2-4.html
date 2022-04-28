@@ -1,0 +1,13 @@
+  let yearData = {
+      year: 2022,
+
+      printYear: function () {
+        console.log(this.year);
+
+        setTimeout(() => {
+          console.log("After 2 seconds");
+          console.log(this.year);
+        }, 2000);
+      },
+    };
+    yearData.printYear();
