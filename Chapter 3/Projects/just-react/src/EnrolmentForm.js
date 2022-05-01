@@ -14,7 +14,7 @@ function EnrolmentForm(props) {
   return (
     <div>
       <form className="enrolForm" onSubmit={handleSubmit}>
-        <h1>{props.selectedProgram} Student Details</h1>
+        <h1>{props.chosenProgram} Student Details</h1>
         <label>First name:</label>
         <input
           type="text"
