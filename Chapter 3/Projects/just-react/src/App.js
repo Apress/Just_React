@@ -4,17 +4,26 @@ import { useState } from "react";
 
 function App() {
   const [program, setProgram] = useState("UG");
-  const [seats, setSeats] = useState(100);
+  const [ugSeats, setUgSeats] = useState(60);
+  const [pgSeats, setPgSeats] = useState(40);
+
   const handleChange = (event) => {
     setProgram(event.target.value);
   };
   const setUpdatedSeats = (updatedSeats) => {
-    setSeats(updatedSeats);
+    if (program === "UG") {
+      setUgSeats(updatedSeats);
+    } else {
+      setPgSeats(updatedSeats);
+    }
   };
   return (
     <div className="App">
       <div className="programs">
-        <label>Remaining Seats - {seats}</label>
+        <label>Remaining UG Seats - {ugSeats}</label>
+        <br />
+        <br />
+        <label>Remaining PG Seats - {pgSeats}</label>
         <br />
         <br />
         <label>Choose Program:</label>
@@ -30,7 +39,7 @@ function App() {
       <EnrolmentForm
         chosenProgram={program}
         setUpdatedSeats={setUpdatedSeats}
-        currentSeats={seats}
+        currentSeats={program === "UG" ? ugSeats : pgSeats}
       />
     </div>
   );
