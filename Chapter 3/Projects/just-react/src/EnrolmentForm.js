@@ -1,48 +1,43 @@
-import "./App.css";
-import EnrolmentForm from "./EnrolmentForm";
 import { useState } from "react";
+import "./App.css";
 
-function App() {
-  const [program, setProgram] = useState("UG");
-  const [ugSeats, setUgSeats] = useState(60);
-  const [pgSeats, setPgSeats] = useState(40);
+function EnrolmentForm(props) {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [welcomeMessage, setWelcomeMessage] = useState("");
 
-  const handleChange = (event) => {
-    setProgram(event.target.value);
-  };
-  const setUpdatedSeats = (updatedSeats) => {
-    if (program === "UG") {
-      setUgSeats(updatedSeats);
-    } else {
-      setPgSeats(updatedSeats);
-    }
+  const handleSubmit = (event) => {
+    setWelcomeMessage(`Welcome ${firstName} ${lastName}`);
+    event.preventDefault();
   };
 
   return (
-    <div className="App">
-      <div className="programs">
-        <label>Remaining UG Seats - {ugSeats}</label>
+    <div>
+      <form className="enrolForm" onSubmit={handleSubmit}>
+        <h1>{props.selectedProgram} Student Details</h1>
+        <label>First name:</label>
+        <input
+          type="text"
+          name="fname"
+          onBlur={(event) => setFirstName(event.target.value)}
+        />
+        <br />
+        <label>Last name:</label>
+        <input
+          type="text"
+          name="lname"
+          onBlur={(event) => setLastName(event.target.value)}
+        />
         <br />
         <br />
-        <label>Remaining PG Seats - {pgSeats}</label>
+        <input type="submit" value="Submit" />
         <br />
-        <br />
-        <label>Choose Program:</label>
-        <select
-          className="appDropDowns"
-          onChange={handleChange}
-          value={program}
-        >
-          <option value="UG">Undergraduate</option>
-          <option value="PG">Postgraduate</option>
-        </select>
-      </div>
-      <EnrolmentForm
-        chosenProgram={program}
-        setUpdatedSeats={setUpdatedSeats}
-        currentSeats={program === "UG" ? ugSeats : pgSeats}
-      />
+        <label id="studentMsg" className="message">
+          {welcomeMessage}
+        </label>
+      </form>
     </div>
   );
 }
-export default App;
+
+export default EnrolmentForm;
