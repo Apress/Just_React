@@ -62,7 +62,7 @@ const EnrolList = (props) => {
     if (props.action === "delete") {
       // filter the selected item
       const deleteItem = items.filter(
-        (item) => item.key === props.selectedItem
+        (item) => item.key === props.selectedItemId
       )[0];
       // Remove from the list
       items = items.filter((item) => item !== deleteItem);
