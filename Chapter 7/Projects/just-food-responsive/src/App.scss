@@ -1,0 +1,51 @@
+$fullwidth: 100;
+$colorAqua: rgba(85, 191, 233, 0.993);
+$colorYellow: rgba(235, 232, 51, 0.993);
+$colorBlue: rgb(22, 61, 97);
+$colorChooseButton: purple;
+
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  width: ($fullwidth * 2/5) * 1%;
+  margin-top: 30px;
+  position: absolute;
+  background: $colorBlue;
+  left: ($fullwidth/2) * 1%;
+  height: 630px;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: white;
+}
+.title {
+  color: $colorYellow;
+  font-weight: 400;
+  font-size: 44px;
+}
+h4 {
+  color: $colorAqua;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 0px;
+}
+.ulApp {
+  list-style-type: none;
+  padding: 0;
+  font-size: 28px;
+}
+.liApp {
+  padding-bottom: 10px;
+}
+div {
+  button {
+    float: left;
+    margin: 5px 0px 0px 3px;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: $colorChooseButton;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,103 @@
+.subTitle {
+  color: rgba(85, 191, 233, 0.993);
+  font-weight: 400;
+  font-size: 34px;
+  margin-top: -5%;
+  text-align: center;
+  margin-left: 10%;
+  width: 80%;
+}
+.selFoodImg {
+  width: 40%;
+  height: 30%;
+  float: left;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+.ulFoodDetails {
+  list-style-type: none;
+  padding: 0;
+  width: 70%;
+  margin-left: 20%;
+  text-align: center;
+  font-size: 18px;
+  height: 25%;
+}
+.selFoodDesc {
+  margin-top: -5%;
+  margin-left: 45%;
+  text-align: center;
+}
+.selFoodPrice {
+  color: rgba(235, 232, 51, 0.993);
+  font-weight: 600;
+  font-size: 22px;
+}
+.liDetails {
+  margin-top: 10px;
+}
+.inputFields {
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgb(13, 138, 65);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  background: rgb(245, 240, 240);
+  color: rgb(5, 19, 66);
+  outline: none;
+}
+
+.quantity {
+  margin: 10px 10px;
+  font-size: 16px;
+  padding: 10px;
+  width: 50px;
+  border: 1px solid rgb(13, 138, 65);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgb(245, 240, 240);
+  color: rgb(5, 19, 66);
+  outline: none;
+}
+.btn {
+  background-color: #0095ff;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 5%;
+  border: 1px solid rgba(235, 232, 51, 0.993);
+}
+.btnOrder {
+  margin-right: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #07c;
+}
+
+.btn:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+.liMessage {
+  margin-top: 10px;
+  color: rgba(235, 232, 51, 0.993);
+}
