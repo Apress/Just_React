@@ -1,0 +1,64 @@
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  position: absolute;
+  background: rgb(22, 61, 97);
+  left: 50%;
+  height: 630px;
+  width: 40%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: white;
+}
+
+.title {
+  color: rgba(235, 232, 51, 0.993);
+  font-weight: 400;
+  font-size: 44px;
+}
+.subTitle {
+  color: rgba(85, 191, 233, 0.993);
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 0px;
+}
+.ulApp {
+  list-style-type: none;
+  padding: 0;
+  font-size: 28px;
+}
+.liApp {
+  padding-bottom: 10px;
+}
+.toggleButton
+{
+  float:left;
+  margin: 5px 0px 0px 5px; 
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color:#367AF6;
+  cursor: pointer;
+}
+
+.signOutButton {
+  float: right;
+  margin: 5px 10px 0px 3px;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #367af6;
+  cursor: pointer;
+}
+.signedInMessage
+{
+  color: orange;
+  font-weight: 200;
+  font-size: 16px;
+}
