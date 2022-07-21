@@ -47,7 +47,7 @@ const App = () => {
         className="toggleButton"
         onClick={() => setIsChooseFoodPage(!isChooseFoodPage)}
       >
-        {isChooseFoodPage ? "Availability Check" : "Choose Food"}
+        {isChooseFoodPage ? "Availability Check" : "Order Food"}
       </button>
       <h3 className="title">Just Food Online Shop</h3>
       {!isChooseFoodPage && (
