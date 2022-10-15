@@ -1,0 +1,9 @@
+*ImportantNote (Chapter 8 Memoization)*
+
+
+Dear Readers,
+'Memoization' came out as 'Memorization' in the book.  'Memoization' is the correct term. This term is mainly used in chapter 8. Please keep this in mind while reading. Thank you! 
+This error is caused due to the spelling correction tool. Apologies.
+
+Regards,
+Hari Narayn
