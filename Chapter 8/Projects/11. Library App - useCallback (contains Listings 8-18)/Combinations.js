@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 const Combinations = React.memo(function ({ countBooks, checkSpace }) {
   console.log("Combinations component is re-rendered");
   let space = "";
-  switch (countBooks) {
+  switch (parseInt(countBooks)) {
     case 1: case 2: case 3: case 4: case 5:  space = "Free Space available"; break;
     case 6: case 7: case 8: case 9: case 10: space = "Perfect"; break;
     case 11: case 12: case 13: case 14: case 15: space = "Need extra storage"; break;
