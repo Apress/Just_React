@@ -11,7 +11,10 @@ const EnrolmentForm = (props) => {
     setWelcomeMessage(
       `${firstName} ${lastName} enrolled. Email sent to - ${email}`
     );
+   if(btnValue === "Enrol")
+    {
     props.setUpdatedSeats(props.currentSeats - 1);
+    }
     event.preventDefault();
   };
   //change of input value set method
