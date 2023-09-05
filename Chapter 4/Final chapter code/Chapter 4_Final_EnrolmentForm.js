@@ -23,7 +23,10 @@ const EnrolmentForm = (props) => {
 
   const handleClick = (event) => {
     handleInputReset("", "", "");
+    if(btnValue === "Enrol")
+    {
     props.setUpdatedSeats(props.currentSeats - 1);
+    }
     // Student ID generation
     const randomKey = Math.floor(1000 + Math.random() * 9000);
     let id = randomKey;
